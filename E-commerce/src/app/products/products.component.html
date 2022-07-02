@@ -1,0 +1,46 @@
+<div class="container-fluid side-display "> 
+  <div id="pageCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                      <img src="../../assets/Images/Carousel_Img5.png" class="d-block" alt="image2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../../assets/Images/Carousel_Img6.png" class="d-block" alt="image3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../../assets/Images/Carousel_Img7.png" class="d-block" alt="image4">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#pageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#pageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div> <!--end of carousel-->
+         
+
+<div class="row">
+  <div class="col-3 pt-3 ps-5">
+<app-products-filter [category]="category"></app-products-filter>
+</div>
+
+  <div class="col-9">
+   <div class="row pt-4 ps-5 text-center pb-4">
+      <ng-container *ngFor="let p of filterProducts; let i = index">
+        <div class="col">
+          <app-products-card [product]="p" [shopping-cart]="cart"></app-products-card>
+        </div>
+        <div *ngIf="(i+1)%2==0" class="w-100"></div>
+      </ng-container>
+        </div>
+        </div>
+      </div>
+      
+<app-footer></app-footer>
+
+      

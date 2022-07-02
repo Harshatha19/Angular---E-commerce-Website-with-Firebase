@@ -1,0 +1,13 @@
+.login-Heading{
+margin-left: 50px;
+font-weight: bolder;
+font-size: 22px;
+}
+.card-body{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

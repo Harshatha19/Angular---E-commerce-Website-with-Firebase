@@ -1,0 +1,19 @@
+
+.container{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+.d-block{
+    width: 1432px;
+    height: 500px;
+    
+}
+.side-display{
+    width: 84.3rem;
+}
+
+
+.sticky-top{
+    top: 80px;
+}

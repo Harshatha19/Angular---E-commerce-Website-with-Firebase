@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "organoshop-dd78f": {
+      "hosting": {
+        "OrganoShop": [
+          "organoshop-dd78f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "organoshop-dd78f"
+  }
+}
